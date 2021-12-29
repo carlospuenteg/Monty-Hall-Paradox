@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+
+<html lan="en">
+
+<head>
+    <title>Monty Hall paradox</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Monty Hall paradox">
+    <meta name="keywords" content="paradox,Monty Hall,math,odds">
+    <meta name="author" content="Carlos Puente">
+    <meta name="keywords" content="paradox,Monty Hall,math,odds">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.png" type="image/png">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <h1 id="heading">Monty Hall paradox</h1>
+    <button class="autoButtons" id="auto" onclick="changeAutoVar();resetTime=1;auto()">AUTO</button><button class="autoButtons" id="autoyes" onclick="changeAutoYesVar();resetTime=1;autoYes()">Automatic (changing choice)</button><button class="autoButtons" id="autono" onclick="changeAutoNoVar();resetTime=1;autoNo()">Automatic (not changing choice)</button><button class="reset" id="reset" onclick="resetAll()">RESET</button>
+    <br><br>
+    <h2 id="message">> Choose a door</h2>
+    <button class="yesNoButtons" id="yes" onclick="resetTime=1500;change=1;phase2()">Yes</button><button class="yesNoButtons" id="no" onclick="resetTime=1500;change=0;phase2()">No</button>
+    <br>
+    <div id="oddsDiv">
+    <p>Win odds (when changing): <span class="odds" id="changing">00.00000000</span> %</p>
+    <p>Win odds (when not changing): <span class="odds" id="notChanging">00.00000000</span> %</p>
+    <p>Attempts: <span class="odds" id="count">0</span></p>
+    </div>
+    <input type="image" class="doorImage" id="image1" alt="closed door" src="images/closed-door.png" onclick="paradox(1)">
+    <input type="image" class="doorImage" id="image2" alt="closed door" src="images/closed-door.png" onclick="paradox(2)">
+    <input type="image" class="doorImage" id="image3" alt="closed door" src="images/closed-door.png" onclick="paradox(3)">
+</body>
+
+</html>

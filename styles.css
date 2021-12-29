@@ -1,0 +1,89 @@
+body {
+    margin-top: 20px;
+}
+
+
+#heading {
+    display: inline;
+    font-size: 25px;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin-left: 30px;
+    margin-right: 10px;
+}
+#message {
+    display: inline-block;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    margin-left: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    margin-top: 5px;
+}
+
+
+button {
+    border: solid 1px;
+    transition-duration: 0.4s;
+    outline: none;
+    cursor: pointer;
+    padding: 7px;
+}
+.autoButtons {
+    display: inline-block;
+}
+.yesNoButtons {
+    display: none;
+}
+.autoButtons, .yesNoButtons {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #264c6f;
+    color: white;
+}
+.autoButtons:hover, .yesNoButtons:hover {
+    background-color: #67e4ff;
+    color: black;
+}
+.autoButtons:active, .yesNoButtons:active {
+    background-color: #ffe913;
+    color: black;
+}
+#reset {
+    font-size: 12px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #2c813f;
+    color: white;
+}
+#reset:hover {
+    background-color: #33ff13;
+    color: black;
+}
+#reset:active  {
+    background-color: #ffe913;
+    color: black;
+}
+
+
+#oddsDiv {
+    float: right;
+    clear: right;
+    font-size: 14px;
+    margin-right: 150px;
+    margin-top: 15px;
+    font-family: monospace, 'Times New Roman', Times, serif;
+    text-align:left;
+}
+
+
+.doorImage {
+    display: inline-block;
+    outline: none;
+    width: 200px;
+    margin: 30px;
+    margin-top: 10px;
+}
+
+
+.odds {
+    color: #9c854d;
+}
